@@ -23,7 +23,7 @@ Without the `-e`, `-m` or `-s` options, `strings` are paths to **test262** cases
 
 ### eshost
 
-To test XS with **eshost**, install the [eshost CLI](https://github.com/bterlson/eshost-cli]). Then add XS to the hosts:
+To test XS with **eshost**, install the [eshost CLI](https://github.com/bterlson/eshost-cli). Then add XS to the hosts:
 
 	eshost --add 'XS' xs ~/.jsvu/xst
 
