@@ -10,15 +10,12 @@ You can use the [jsvu CLI](https://github.com/GoogleChromeLabs/jsvu) to install 
 
 ## Usage
 
-	xst [-h] [-e] [-m] [-s] [-v] strings...
+	xst [-h] [-e] [-m] [-s] [-t] [-v] strings...
+	- `-h`: print this help message- `-e`: eval strings- `-m`: strings are paths to modules- `-s`: strings are paths to scripts- `-t`: strings are paths to test262 cases or directories- `-v`: print XS version
+	without `-e`, `-m`, `-s`, or `-t`:
 
-- `-h`: print this help message
-- `-e`: eval `strings`
-- `-m`: `strings` are paths to modules
-- `-s`: `strings` are paths to scripts
-- `-v`: print XS version
-
-Without the `-e`, `-m` or `-s` options, `strings` are paths to **test262** cases or directories. 
+- if `../harness` exists, strings are paths to test262 cases or directories 
+- else if the extension is `.mjs`, strings are paths to modules- else strings are paths to scripts
 
 ### eshost
 
